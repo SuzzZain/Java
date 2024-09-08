@@ -1,0 +1,30 @@
+Following consistent naming conventions helps make the code readable and maintainable.
+
+Class Names: Should be nouns and follow PascalCase.
+Example: Person, Car, Animal
+
+Method Names: Should be verbs and follow camelCase.
+Example: getName(), setAge(), calculateSalary()
+
+Variable Names: Should be descriptive and follow camelCase.
+Example: firstName, totalAmount, isAvailable
+
+Constant Names: Should be in ALL_CAPS with words separated by underscores.
+Example: MAX_SIZE, PI
+
+Package Names: Should be in all lowercase.
+Example: com.example.application
+
+
+class Person {  // PascalCase for class name
+    private String firstName;  // camelCase for variable
+    private int age;
+
+    public String getFirstName() {  // camelCase for method name
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+}

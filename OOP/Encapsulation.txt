@@ -1,0 +1,6 @@
+Encapsulation is the concept of hiding internal details of an object and only exposing what is necessary via public methods like getters and setters. It helps in data protection and maintains control over how the data is accessed and modified.
+Benefits of Encapsulation:
+    Protects the data from unauthorized access.
+    Provides controlled access via methods.
+    Enables validation and consistency checks (e.g., validating the age).
+

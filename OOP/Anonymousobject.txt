@@ -1,0 +1,14 @@
+An anonymous object is an object that is created without being assigned to any variable. It is typically used when you need the object for single use.
+
+class Calculator {
+    public void add(int a, int b) {
+        System.out.println("Sum: " + (a + b));
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an anonymous object
+        new Calculator().add(5, 10);  // Output: Sum: 15
+    }
+}
