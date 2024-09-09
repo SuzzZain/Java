@@ -1,0 +1,6 @@
+A Map is a collection that maps keys to values. It allows duplicate values but does not allow duplicate keys.
+
+Implementations of Map:
+HashMap: Unordered map based on a hash table.
+LinkedHashMap: Maintains the order of insertion.
+TreeMap: Sorted map based on a Red-Black tree.

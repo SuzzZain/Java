@@ -1,0 +1,7 @@
+A Set is a collection that does not allow duplicate elements and has no specific order (except for SortedSet).
+
+Implementations of Set:
+HashSet: Implements a set based on a hash table. Does not guarantee order.
+LinkedHashSet: Maintains insertion order.
+TreeSet: Implements a set using a Red-Black tree and orders the elements (sorted).
+

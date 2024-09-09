@@ -1,0 +1,22 @@
+Java Collection Framework (JCF)
+The Java Collection Framework provides a set of classes and interfaces for handling groups of objects.
+It includes interfaces, implementations, and algorithms to store, retrieve, and manipulate data efficiently. 
+Collections can dynamically resize and are more flexible than traditional arrays.
+
+Key Interfaces in the Collection Framework
+The main interfaces in the Java Collection Framework are:
+
+Collection: Root interface for all collections.
+List: Ordered collection (allows duplicates).
+Set: Unordered collection (no duplicates).
+Queue: Collection for holding elements before processing.
+Map: Collection of key-value pairs (no duplicate keys).
+
+
+A List is an ordered collection (also known as a sequence). It allows duplicate elements and provides indexed access to its elements.
+
+Implementations of List:
+ArrayList: Resizable array implementation.
+LinkedList: Doubly linked list implementation.
+Vector: Similar to ArrayList but synchronized.
+Stack: A subclass of Vector that implements a LIFO (Last In First Out) stack.
