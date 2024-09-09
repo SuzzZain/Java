@@ -1,0 +1,13 @@
+There are four main types of interfaces in Java:
+
+Normal Interface: Can have multiple abstract methods and, from Java 8 onwards, default and static methods.
+Example: Runnable, Comparator.
+
+Marker Interface: An interface with no methods or fields, used to signal that a class has some specific property. For example, Serializable is a marker interface.
+Example: Serializable, Cloneable.
+
+Functional Interface: An interface with exactly one abstract method, used with lambda expressions.
+Example: Runnable, Callable, ActionListener.
+
+Tag Interface: Similar to marker interfaces, used to "tag" a class for a specific role.
+Example: Remote.

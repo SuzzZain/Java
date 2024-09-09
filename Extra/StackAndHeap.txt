@@ -1,0 +1,87 @@
+1. Stack Memory
+The stack is where method calls and local variables are stored. It follows the Last In First Out (LIFO) principle, meaning the last item added to the stack is the first one to be removed.
+
+Characteristics of Stack Memory:
+Method-level storage: When a method is invoked, a new block (frame) is created in the stack to store the method’s parameters, local variables, and references to objects in the heap.
+Fast access: Since the stack works in a LIFO manner, memory management in the stack is very efficient and fast.
+Size limitations: The stack size is usually smaller than the heap, and it’s possible to get a StackOverflowError if there are too many nested method calls (recursion).
+Automatic memory management: When a method finishes execution, its corresponding stack frame is automatically cleared.
+
+
+public class StackExample {
+    public static void main(String[] args) {
+        int a = 10; // Stored in stack memory
+        int b = 20; // Stored in stack memory
+        int result = add(a, b); // The variables and result will be pushed to the stack
+        System.out.println("Result: " + result);
+    }
+
+    public static int add(int x, int y) {
+        return x + y; // x and y are stored in stack memory
+    }
+}
+
+
+In Java, Stack and Heap are two distinct memory areas used during the execution of a program. Understanding how they work is crucial for memory management, variable storage, and object lifecycles. Let’s explore both in detail:
+
+1. Stack Memory
+The stack is where method calls and local variables are stored. It follows the Last In First Out (LIFO) principle, meaning the last item added to the stack is the first one to be removed.
+
+Characteristics of Stack Memory:
+Method-level storage: When a method is invoked, a new block (frame) is created in the stack to store the method’s parameters, local variables, and references to objects in the heap.
+Fast access: Since the stack works in a LIFO manner, memory management in the stack is very efficient and fast.
+Size limitations: The stack size is usually smaller than the heap, and it’s possible to get a StackOverflowError if there are too many nested method calls (recursion).
+Automatic memory management: When a method finishes execution, its corresponding stack frame is automatically cleared.
+Example of Stack Usage:
+
+public class StackExample {
+    public static void main(String[] args) {
+        int a = 10; // Stored in stack memory
+        int b = 20; // Stored in stack memory
+        int result = add(a, b); // The variables and result will be pushed to the stack
+        System.out.println("Result: " + result);
+    }
+
+    public static int add(int x, int y) {
+        return x + y; // x and y are stored in stack memory
+    }
+}
+In the above example:
+
+The method add() and its local variables x and y are stored in the stack.
+When add() completes, its frame is removed from the stack.
+2. Heap Memory
+The heap is where all Java objects are stored. When you create a new object using new, it is allocated in the heap memory. Unlike stack memory, heap memory is global and shared among all threads of the application.
+
+Characteristics of Heap Memory:
+Object-level storage: All objects created in Java are stored in the heap memory, including arrays and class instances.
+Dynamic memory allocation: Heap memory is allocated during runtime, making it suitable for storing objects with dynamic sizes.
+Garbage collection: The Java garbage collector manages heap memory by reclaiming memory occupied by objects that are no longer referenced.
+Slower access: Accessing heap memory is slower compared to stack memory because the heap is more complex and shared across threads.
+Large memory: The heap is typically much larger than the stack and can grow dynamically as needed (within limits).
+
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;  // Object reference (name) is stored in heap memory
+        this.age = age;    // Object reference (age) is stored in heap memory
+    }
+}
+
+public class HeapExample {
+    public static void main(String[] args) {
+        Person person1 = new Person("John", 30);  // Object person1 is stored in heap memory
+        Person person2 = new Person("Jane", 25);  // Object person2 is stored in heap memory
+
+        System.out.println(person1.name + " is " + person1.age + " years old.");
+        System.out.println(person2.name + " is " + person2.age + " years old.");
+    }
+}
+
+
+In this example:
+
+The Person objects person1 and person2 are created in the heap.
+The reference variables person1 and person2 are stored in the stack, pointing to the objects in the heap.
